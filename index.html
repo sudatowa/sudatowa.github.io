@@ -1,1 +1,200 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Towa Suda | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Noto+Sans+JP:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #fcfcf9;
+            --text-color: #2c3e50;
+            --accent-color: #a68a56; /* Goldish */
+            --sub-color: #1a2a3a;    /* Deep Navy */
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(26, 42, 58, 0.05), rgba(26, 42, 58, 0.05)), url('https://researchmap.jp/sudatowa/avatar.png') center/150px no-repeat;
+            background-position: center 20%;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin: 0.5rem 0;
+            color: var(--sub-color);
+            letter-spacing: 0.1em;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(252, 252, 249, 0.9);
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+            z-index: 1000;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: var(--sub-color);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        section { margin-bottom: 6rem; }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            border-bottom: 1px solid var(--accent-color);
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+
+        .profile-text { font-size: 1.05rem; }
+
+        .card {
+            background: white;
+            padding: 1.5rem;
+            border-left: 3px solid var(--accent-color);
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+
+        .date {
+            font-size: 0.85rem;
+            color: #888;
+            display: block;
+        }
+
+        .tag {
+            display: inline-block;
+            background: var(--sub-color);
+            color: white;
+            padding: 2px 10px;
+            font-size: 0.75rem;
+            border-radius: 20px;
+            margin-right: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 4rem;
+            background: var(--sub-color);
+            color: white;
+            font-size: 0.8rem;
+        }
+
+        a { color: var(--accent-color); transition: 0.3s; }
+        a:hover { opacity: 0.7; }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="subtitle">Specially Appointed Associate Professor</div>
+    <h1>Towa Suda</h1>
+    <p>須田 永遠</p>
+</header>
+
+<nav>
+    <a href="#about">ABOUT</a>
+    <a href="#research">RESEARCH</a>
+    <a href="#experience">EXPERIENCE</a>
+    <a href="#contact">CONTACT</a>
+</nav>
+
+<div class="container">
+    <section id="about">
+        <h2>About</h2>
+        <div class="profile-text">
+            [cite_start]<p>名古屋大学 デジタル人文社会科学研究推進センター 特任准教授 [cite: 1][cite_start]。20世紀フランス文学、特にピエール・クロソウスキーの小説作品における「共犯性」や想像力の分析を軸に、情報学の手法を用いたナラティブ分析やネットワーク解析に従事しています [cite: 1]。</p>
+        </div>
+    </section>
+
+    <section id="research">
+        <h2>Research Interests</h2>
+        <div>
+            <span class="tag">フランス文学</span>
+            <span class="tag">ピエール・クロソウスキー</span>
+            <span class="tag">ナラティブ</span>
+            <span class="tag">ソーシャルメディア</span>
+            [cite_start]<span class="tag">物語論</span> [cite: 1]
+        </div>
+        <div style="margin-top: 2rem;">
+            <div class="card">
+                <span class="date">Current Project</span>
+                <strong>SNS解析のための日本語文体論の構築</strong>
+                [cite_start]<p>科学研究費助成事業 基盤研究（C）[cite: 1]</p>
+            </div>
+            <div class="card">
+                <span class="date">2025-12</span>
+                <strong>辺差分グラフとネットワークフロー分析を用いた知識体系の比較可視化</strong>
+                [cite_start]<p>Wikipediaの思想家ネットワークを例に、知識構造の変容を可視化する研究 [cite: 1, 2]。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 1rem;">
+                <span class="date">2025.04 - Present</span>
+                [cite_start]<strong>名古屋大学</strong> デジタル人文社会科学研究推進センター 特任准教授 [cite: 1]
+            </li>
+            <li style="margin-bottom: 1rem;">
+                <span class="date">2021.02 - 2025.03</span>
+                [cite_start]<strong>国立情報学研究所</strong> 情報学プリンシプル研究系 特任研究員 [cite: 1]
+            </li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        [cite_start]<p>名古屋大学 デジタル人文社会科学研究推進センター [cite: 1]</p>
+        [cite_start]<p>Email: <a href="mailto:ts@nagoya-u.jp">ts@nagoya-u.jp</a> [cite: 1]</p>
+        <p>Links: <a href="https://researchmap.jp/sudatowa">researchmap</a> / <a href="https://www.humanitiesplus.jp/">Humanities+</a></p>
+    </section>
+</div>
+
+<footer>
+    &copy; 2026 Towa Suda. Built with Intelligence and Narrative.
+</footer>
+
+</body>
+</html>
